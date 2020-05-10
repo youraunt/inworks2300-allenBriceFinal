@@ -1,12 +1,12 @@
-#!/usr/bin/env python3
+
 
 import dash
 import dash_core_components as dcc
 import dash_html_components as html
 import pandas as pd
 import plotly.graph_objs as go
-import os
 
+ny_times_url = 'https://raw.githubusercontent.com/nytimes/covid-19-data/master/us-states.csv'
 csv_url = 'https://raw.githubusercontent.com/youraunt/public/master/INWK2300/covid_19_Colorado_Daily.csv'
 df = pd.read_csv(csv_url, parse_dates=['Date'])
 

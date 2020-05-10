@@ -74,7 +74,7 @@ death_by_county.update_layout(
     ))
 
 # -------------------------------------------------------------------------------------------------------------
-
+#  Working with Dash to handle style
 app = dash.Dash()
 server = app.server
 
@@ -86,7 +86,7 @@ new_deaths_graph = go.Scatter(x=df['Date'], y=df['New Deaths'], mode='lines+mark
 confirmed_scatter_graph = go.Scatter(x=df['Date'], y=df['Confirmed'], marker_color='darkSalmon')
 hospital_scatter_graph = go.Scatter(x=df['Date'], y=df['Hospitalized'], marker_color='darkSalmon')
 death_scatter_graph = go.Scatter(x=df['Date'], y=df['Death'], marker_color='darkSalmon')
-#  Working with Dash to handle style
+
 app.layout = html.Div(
     style={'backgroundColor': 'white'},
     children=[

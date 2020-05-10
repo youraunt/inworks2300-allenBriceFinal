@@ -2,6 +2,9 @@
 
 >For this project I selected to visualize
 >the COVID-19 pandemic.
+## Requirements
+
+* pip install -r /path/to/requirements.txt
 
 ## Built With
 

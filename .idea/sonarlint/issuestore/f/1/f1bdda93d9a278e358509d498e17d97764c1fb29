@@ -1,2 +1,4 @@
 
-vpython:S11922"WDefine a constant instead of duplicating this literal 'Number of Individuals' 10 times.(ÿ•Œ˜8æüÚ±Ÿ.
+jpython:S1192"KDefine a constant instead of duplicating this literal 'New Mexico' 3 times.(àÜí®8ÉµÉûŸ.
+vpython:S1192s"WDefine a constant instead of duplicating this literal 'Number of Individuals' 10 times.(ÿ•Œ˜8”¡‘ûŸ.
+hpython:S3827F"Dmpl_fig is not defined. Change its name or define it before using it(©èÅšøÿÿÿÿ8¬†åûŸ.

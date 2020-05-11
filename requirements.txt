@@ -1,3 +1,4 @@
+pdfkit
 altgraph==0.17
 Brotli==1.0.7
 click==7.1.2

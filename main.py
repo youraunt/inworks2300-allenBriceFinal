@@ -5,6 +5,7 @@ import dash_html_components as html
 import pandas as pd
 import plotly.graph_objs as go
 import numpy as np
+import pdfkit
 
 #  urls used
 ny_times_url_state = 'https://raw.githubusercontent.com/nytimes/covid-19-data/master/us-states.csv'
@@ -12,7 +13,7 @@ ny_times_url_county = 'https://raw.githubusercontent.com/nytimes/covid-19-data/m
 my_git_url = 'https://raw.githubusercontent.com/youraunt/public/master/INWK2300/covid_19_Colorado_Daily.csv'
 colorado_gov_url = 'https://covid19.colorado.gov/case-data'
 welcome_message = '\n\nWelcome to my Data Visualization Project\n' \
-                  'Click the url to load in your browser.\n\n\n\n'
+                  'Load the url in your preferred browser.\n\n\n\n'
 df = pd.read_csv(my_git_url, parse_dates=['Date'])
 # -------------------------------------------------------------------------------------------------------------
 #  Data
@@ -251,4 +252,5 @@ app.layout = html.Div(
     ])
 if __name__ == '__main__':
     print(welcome_message)
+    pdfkit.from_url('http://local.dash.site', 'out.pdf')
     app.run_server(debug=True)
